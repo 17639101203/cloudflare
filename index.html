@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="一个部署在 Cloudflare Pages 上的免费静态页面示例。"
+    />
+    <title>我的 Cloudflare Pages 小站</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="./" aria-label="返回首页">
+        <span class="brand-mark">C</span>
+        <span>Cloudflare 小站</span>
+      </a>
+      <nav class="site-nav" aria-label="主导航">
+        <a href="#about">简介</a>
+        <a href="#features">内容</a>
+        <a href="#contact">联系</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Free Static Site</p>
+          <h1 id="hero-title">这是我的第一个 Cloudflare Pages 免费小站</h1>
+          <p class="hero-text">
+            页面使用纯 HTML 和 CSS 编写，可以直接上传到 GitHub，再通过
+            Cloudflare Pages 自动发布到免费的 <strong>pages.dev</strong> 子域名。
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#contact">查看联系方式</a>
+            <a class="button secondary" href="./cloudflare-free-subdomain-guide.md">查看部署指南</a>
+          </div>
+        </div>
+        <figure class="hero-media">
+          <img
+            src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1400&q=80"
+            alt="地球夜景和网络连接光线"
+          />
+          <figcaption>Ready for Cloudflare Pages</figcaption>
+        </figure>
+      </section>
+
+      <section id="about" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">About</p>
+          <h2>把这个页面改成你自己的主页</h2>
+        </div>
+        <p class="section-copy">
+          这里可以放你的个人介绍、项目说明、博客入口、产品介绍或测试内容。当前页面没有使用任何前端框架，
+          适合用来验证 GitHub 到 Cloudflare Pages 的自动部署流程。
+        </p>
+      </section>
+
+      <section id="features" class="feature-grid" aria-label="页面内容">
+        <article class="feature-card">
+          <span class="feature-number">01</span>
+          <h3>纯静态</h3>
+          <p>只包含 HTML 和 CSS，不需要安装依赖，也不需要运行构建命令。</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-number">02</span>
+          <h3>可直接部署</h3>
+          <p>Cloudflare Pages 连接 GitHub 仓库后，可以直接发布根目录内容。</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-number">03</span>
+          <h3>方便替换</h3>
+          <p>标题、简介、链接和联系方式都集中在这个文件里，后续改起来很快。</p>
+        </article>
+      </section>
+
+      <section id="contact" class="contact-panel" aria-labelledby="contact-title">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">把这里换成你的真实链接</h2>
+        </div>
+        <div class="contact-links">
+          <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="mailto:hello@example.com">Email</a>
+          <a href="https://dash.cloudflare.com/" target="_blank" rel="noreferrer">Cloudflare</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>© 2026 Cloudflare 小站</span>
+      <span>Hosted on Cloudflare Pages</span>
+    </footer>
+  </body>
+</html>
